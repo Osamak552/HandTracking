@@ -49,9 +49,9 @@ while True:
         length = math.hypot(x2-x1, y2-y1)
 
         if length < 50:
-            cv2.circle(img, (cx, cy), 10, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (cx, cy), 8, (0, 255, 0), cv2.FILLED)
         if length >=190:
-            cv2.circle(img, (cx, cy), 10, (51, 51, 255), cv2.FILLED)
+            cv2.circle(img, (cx, cy), 8, (51, 51, 255), cv2.FILLED)
 
         if length > 150:
             col = np.interp(length,[150,200],[102,0])
