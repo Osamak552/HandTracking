@@ -8,6 +8,7 @@ class HandTracker():
         self.Mode = mode
         self.MaxNoHands = maxNoHands
         self.MinDetectionConfidence = minDetectionConfidence
+        
         self.MinTrackingConfidence = minTrackingConfidence
 
         self.mpHands = mp.solutions.hands
@@ -40,8 +41,8 @@ class HandTracker():
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 lst.append([id,cx,cy])
 
-                # if id == 4:
-                #     cv2.circle(img, (cx,cy), 10, (255,0,255),cv2.FILLED)
+                if id == 4:
+                    cv2.circle(img, (cx,cy), 10, (255,0,255),cv2.FILLED)
         return lst
 
 
