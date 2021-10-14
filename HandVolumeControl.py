@@ -37,7 +37,7 @@ while True:
         x2, y2 = landMarks[8][1], landMarks[8][2]
 
         cx, cy = (x1+x2)//2, (y1+y2)//2
-
+#drawing circles
         cv2.circle(img, (x1, y1), 12, (255, 0, 0), cv2.FILLED)
         cv2.circle(img, (x2, y2), 12, (255, 0, 0), cv2.FILLED)
 
